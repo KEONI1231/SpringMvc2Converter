@@ -1,7 +1,6 @@
 package mvc2converter.typeconverter.converter;
 
 import mvc2converter.typeconverter.type.IpPort;
-import org.assertj.core.api.Assertions;
 import org.junit.jupiter.api.Test;
 
 import static org.assertj.core.api.Assertions.*;
@@ -10,7 +9,7 @@ public class ConverterTest
 {
     @Test
     void StringToInteger() {
-        StringToIntegerCOnverter converter = new StringToIntegerCOnverter();
+        StringToIntegerConverter converter = new StringToIntegerConverter();
         Integer result = converter.convert("10");
         assertThat(result).isEqualTo(10);
     }
